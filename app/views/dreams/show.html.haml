@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @dream.name
+%p
+  %b Description:
+  = @dream.description
+%p
+  %b Visible:
+  = @dream.visible
+%p
+  %b Age:
+  = @dream.age
+%p
+  %b Location:
+  = @dream.location
+
+= link_to 'Edit', edit_dream_path(@dream)
+\|
+= link_to 'Back', dreams_path

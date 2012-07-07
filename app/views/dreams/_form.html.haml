@@ -1,0 +1,25 @@
+= form_for @dream do |f|
+  -if @dream.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@dream.errors.count, "error")} prohibited this dream from being saved:"
+      %ul
+        - @dream.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :description
+    = f.text_area :description
+  .field
+    = f.label :visible
+    = f.check_box :visible
+  .field
+    = f.label :age
+    = f.number_field :age
+  .field
+    = f.label :location
+    = f.text_field :location
+  .actions
+    = f.submit 'Save'

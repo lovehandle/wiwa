@@ -1,4 +1,6 @@
 Wiwa::Application.routes.draw do
+  resources :dreams
+
   ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config
@@ -52,7 +54,7 @@ Wiwa::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  root :to => 'dreams#index'
 
   # See how all your routes lay out with "rake routes"
 
