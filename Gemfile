@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
 
+gem 'haml-rails',   '~> 0.3.4'
 gem 'jquery-rails'
-gem 'rails', '~> 3.2.6'
+gem 'rails',        '~> 3.2.6'
 gem 'sqlite3'
 
 group :assets do
