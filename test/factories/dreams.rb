@@ -4,7 +4,7 @@ FactoryGirl.define do
   factory :dream do
     name "MyString"
     description "MyText"
-    visible false
+    visible true
     age 1
     location "MyString"
   end
