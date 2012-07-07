@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'activeadmin',  '~> 0.4.4'
 gem 'haml-rails',   '~> 0.3.4'
 gem 'jquery-rails', '~> 2.0.2'
+gem 'paperclip',    '~> 3.1.2'
 gem 'rails',        '~> 3.2.6'
 gem 'sqlite3',      '~> 1.3.6'
 
