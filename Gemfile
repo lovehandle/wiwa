@@ -20,4 +20,5 @@ end
 group :test do
   gem 'factory_girl_rails', '~> 3.5.0'
   gem 'rspec-rails',        '~> 2.10.1'
+  gem 'shoulda',            '~> 3.0.1'
 end
