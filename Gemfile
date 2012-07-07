@@ -12,6 +12,10 @@ group :assets do
   gem 'uglifier',     '~> 1.0.3'
 end
 
+group :development do
+  gem 'twitter-bootstrap-rails', '~> 2.1.0'
+end
+
 group :test do
   gem 'factory_girl_rails', '~> 3.5.0'
   gem 'rspec-rails',        '~> 2.10.1'
