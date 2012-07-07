@@ -1,0 +1,30 @@
+%p#notice= notice
+
+%p
+  %b First name:
+  = @dream_submission.first_name
+%p
+  %b Last name:
+  = @dream_submission.last_name
+%p
+  %b City:
+  = @dream_submission.city
+%p
+  %b State:
+  = @dream_submission.state
+%p
+  %b Country:
+  = @dream_submission.country
+%p
+  %b Dream:
+  = @dream_submission.dream
+%p
+  %b Age:
+  = @dream_submission.age
+%p
+  %b Email:
+  = @dream_submission.email
+
+= link_to 'Edit', edit_dream_submission_path(@dream_submission)
+\|
+= link_to 'Back', dream_submissions_path

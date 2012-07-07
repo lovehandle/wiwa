@@ -1,4 +1,6 @@
 Wiwa::Application.routes.draw do
+  resources :dream_submissions
+
   resources :dreams
 
   ActiveAdmin.routes(self)
