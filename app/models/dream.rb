@@ -1,11 +1,11 @@
 class Dream < ActiveRecord::Base
 
-  validates :name, :age, :description, :location, { :presence => true, :if => lambda { visible } }
+  validates :name, :age, :description, :location, { :presence => true, :if => lambda { |d| d.visible? } }
   validate :validate_description_length
 
-  attr_accessible :age, :description, :location, :name, :visible
+  attr_accessible :age, :description, :location, :name, :visible, :portrait
 
-  has_attached_file :portrait, :styles => { :medium => "300x300", :thumb => "100x100" }
+  has_attached_file :portrait, :styles => { :medium => "400x400", :thumb => "100x100" }
 
   scope :visible, where(:visible => true)
 

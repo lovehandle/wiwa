@@ -1,7 +1,7 @@
 class DreamSubmission < ActiveRecord::Base
 
   validates :age, :city, :country, :dream, :email, :first_name, :last_name, :state, :presence => true
-  validates :state,   :inclusion => { :in => Carmen.state_codes, :if => lambda { domestic? } }
+  validates :state,   :inclusion => { :in => Carmen.state_codes, :if => lambda { |d| d.domestic? } }
   validates :country, :inclusion => { :in => Carmen.country_names }
 
   attr_accessible :age, :city, :country, :dream, :email, :first_name, :last_name, :state

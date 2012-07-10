@@ -24,6 +24,7 @@ ActiveAdmin.register Dream do
       f.input(:name)
       f.input(:location)
       f.input(:age, :as => :number)
+      f.input(:description, :as => :text)
       f.input(:visible, :as => :radio)
       f.input(:portrait, :as => :file, :hint => f.template.image_tag(f.object.portrait.url(:medium)))
     end

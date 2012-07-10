@@ -18,11 +18,16 @@
     .container
       .content
         .row
+          .span12
+            #banner
+        .row
+          .span12
+            .notice= notice
+            .error= alert
+        .row
           .span9
-            = yield
+            #main= yield
           .span3
-            = render "layouts/sidebar"
-      %footer
-        %p &copy; WIWA 2012
+            #sidebar= render "layouts/sidebar"
 
     = javascript_include_tag "application"

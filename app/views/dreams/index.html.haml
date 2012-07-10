@@ -1,7 +1,11 @@
 - for dream in @dreams
   .dream
     .dream-portrait
-    .dream-arrow
+      #{image_tag(dream.portrait.url(:medium))}
+    .dream-line
+      .line
     .dream-body
       %p #{dream.name}, #{dream.location}, #{dream.age}
       %p #{dream.description}
+
+= paginate @dreams
